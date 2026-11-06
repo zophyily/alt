@@ -1,7 +1,7 @@
 module.exports = async function runBridesmaids(page) {
   // =========================
-  // 🔧 CONFIG..
-  // =========================
+  // 🔧 CONFIG
+  // =========================.
   const PARTY_ID = 7943;
   const TARGET_URL =
     `https://v3.g.ladypopular.com/party/center/planning.php?bridesmaid_party_id=${PARTY_ID}`;
@@ -9,7 +9,7 @@ module.exports = async function runBridesmaids(page) {
   console.log(`👰 Bridesmaids script started`);
 
   // =========================
-  // 🌐 LOAD PAGE
+  // 🌐 LOAD PAGE.
   // =========================
   await page.goto(TARGET_URL, {
     waitUntil: 'domcontentloaded',

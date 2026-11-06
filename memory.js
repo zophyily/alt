@@ -80,6 +80,7 @@ module.exports = async function runMemoryEvent(page) {
     return match ? match[1] : null;
   }
 
+
   async function nominalClickTile(index) {
     const tiles = await getAllTiles();
     const tile = tiles[index];

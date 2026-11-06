@@ -7,7 +7,7 @@ module.exports = async function runPetTraining(page) {
     });
     await page.waitForTimeout(5000);
 
-    // 🔍 STEP 1: Find active pet
+    // 🔍 STEP 1: Find active pet.
     const activePet = await page.$('.pets-cars-wrapper.active-tab');
     if (!activePet) {
       console.log("❌ No active pet found. Skipping pet training.");
@@ -18,7 +18,7 @@ module.exports = async function runPetTraining(page) {
     const petIdNumber = petId.replace('pet', '');
     console.log(`🐶 Active pet detected. Pet ID: ${petIdNumber}`);
 
-    // 🔍 STEP 2: Check cooldown (diamond bypass safety).
+    // 🔍 STEP 2: Check cooldown (diamond bypass safety)
     const cooldownInfo = await activePet.evaluate(pet => {
       const button = pet.querySelector('#trainPet');
       const cooldownBar = pet.querySelector('#trainingCooldown');

@@ -1,4 +1,4 @@
-// Slots.js..
+// Slots.js
 
 module.exports = async function runSlotsEvent(page) {
   const slotsUrl = process.env.LP_SLOTS_URL;
